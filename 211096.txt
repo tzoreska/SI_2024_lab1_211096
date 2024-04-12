@@ -1,0 +1,89 @@
+$ mkdir SI_2024_lab1_211096
+
+$ cd SI_2024_lab1_211096
+
+$ git init
+
+$ git remote add origin https://github.com/tzoreska/SI_2024_lab1_211096.git
+
+$ touch README.md
+
+$ git add README.md
+
+$ echo tamara_zoreska_211096 > README.md
+
+$ cat README.md
+
+
+$ git commit -m "Initial commit"
+
+$ git add --all
+
+$ git commit -m "Add starter code"
+
+
+$ git push -u origin master
+
+$ git branch bug1
+
+
+$ git branch bug2
+
+$ git checkout bug1
+
+
+$ nano SILab1_1.java
+
+
+$ cat SILab1_1.java
+
+$ git add SILab1_1.java
+
+
+$ git commit -m "Fix wrong condition in filterOddLengthStrings"
+
+
+$ git checkout bug2
+
+$ nano SILab1_2.java
+
+$ git add SILab1_2.java
+
+$ cat SILab1_2.java
+
+$ git commit -m "а Fix wrong condition in makeBigStringFrom"
+
+$ git checkout bug1
+
+$ nano SILab1Main.java
+
+
+$ cat SILab1Main.java
+
+$ git add SILab1Main.java
+
+$ git commit -m "Call method filterOddLengthStrings in main class"
+
+$ git checkout bug2
+
+$ nano SILab1Main.java
+
+$ git rebase --continue
+
+$ git status
+
+$ git checkout master
+
+$ git merge bug2
+
+$ git push --all
+
+$ git push --force origin bug2
+
+$ touch logs.txt
+
+$ git log
+
+$ cat logs.txt
+
+$ touch 211096.txt
